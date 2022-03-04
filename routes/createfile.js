@@ -13,7 +13,7 @@ if (!fs.existsSync(dir)) {
   fs.mkdirSync(dir);
 }
 
-const directoryPath = path.join(__dirname, "..\\", "\\DateTime");
+const directoryPath = path.join(__dirname, "../", "/DateTime");
 
 /* GET users listing. */
 router.post("/", (req, res) => {
@@ -37,7 +37,7 @@ router.post("/", (req, res) => {
 
   // writing current datetime to text file
   fs.writeFileSync(
-    directoryPath + "\\" + filename + ".txt",
+    directoryPath + "/" + filename + ".txt",
     datetime.toString()
   );
 
