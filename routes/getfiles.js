@@ -6,7 +6,7 @@ const fs = require("fs");
 // directory Path
 const path = require("path");
 
-const directoryPath = path.join(__dirname, "..\\", "\\DateTime");
+const directoryPath = path.join(__dirname, "../", "/DateTime");
 
 /* GET home page. */
 router.get("/", (req, res) => {
